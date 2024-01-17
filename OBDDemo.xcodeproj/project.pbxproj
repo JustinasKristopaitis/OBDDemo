@@ -14,6 +14,7 @@
 		EC334EEA2B587CCA00A5ECBD /* OBDDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC334EE92B587CCA00A5ECBD /* OBDDemoTests.swift */; };
 		EC334EF42B587CCA00A5ECBD /* OBDDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC334EF32B587CCA00A5ECBD /* OBDDemoUITests.swift */; };
 		EC334EF62B587CCA00A5ECBD /* OBDDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC334EF52B587CCA00A5ECBD /* OBDDemoUITestsLaunchTests.swift */; };
+		EC334F062B587E6B00A5ECBD /* ControlUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC334F052B587E6B00A5ECBD /* ControlUnit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		EC334EEF2B587CCA00A5ECBD /* OBDDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OBDDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC334EF32B587CCA00A5ECBD /* OBDDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBDDemoUITests.swift; sourceTree = "<group>"; };
 		EC334EF52B587CCA00A5ECBD /* OBDDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBDDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EC334F052B587E6B00A5ECBD /* ControlUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlUnit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,8 @@
 		EC334ED62B587CC900A5ECBD /* OBDDemo */ = {
 			isa = PBXGroup;
 			children = (
+				EC334F082B587EB600A5ECBD /* Components */,
+				EC334F022B587E1A00A5ECBD /* Modules */,
 				EC334ED72B587CC900A5ECBD /* OBDDemoApp.swift */,
 				EC334ED92B587CC900A5ECBD /* ContentView.swift */,
 				EC334EDB2B587CCA00A5ECBD /* Assets.xcassets */,
@@ -127,6 +131,45 @@
 				EC334EF52B587CCA00A5ECBD /* OBDDemoUITestsLaunchTests.swift */,
 			);
 			path = OBDDemoUITests;
+			sourceTree = "<group>";
+		};
+		EC334F022B587E1A00A5ECBD /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				EC334F032B587E4700A5ECBD /* Control Units */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		EC334F032B587E4700A5ECBD /* Control Units */ = {
+			isa = PBXGroup;
+			children = (
+				EC334F072B587E7200A5ECBD /* Views */,
+				EC334F042B587E5100A5ECBD /* Model */,
+			);
+			path = "Control Units";
+			sourceTree = "<group>";
+		};
+		EC334F042B587E5100A5ECBD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC334F052B587E6B00A5ECBD /* ControlUnit.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EC334F072B587E7200A5ECBD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EC334F082B587EB600A5ECBD /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +304,7 @@
 			files = (
 				EC334EDA2B587CC900A5ECBD /* ContentView.swift in Sources */,
 				EC334ED82B587CC900A5ECBD /* OBDDemoApp.swift in Sources */,
+				EC334F062B587E6B00A5ECBD /* ControlUnit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
