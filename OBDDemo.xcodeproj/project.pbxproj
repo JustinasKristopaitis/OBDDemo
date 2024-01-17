@@ -1,0 +1,666 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC334ED82B587CC900A5ECBD /* OBDDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC334ED72B587CC900A5ECBD /* OBDDemoApp.swift */; };
+		EC334EDA2B587CC900A5ECBD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC334ED92B587CC900A5ECBD /* ContentView.swift */; };
+		EC334EDC2B587CCA00A5ECBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC334EDB2B587CCA00A5ECBD /* Assets.xcassets */; };
+		EC334EE02B587CCA00A5ECBD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC334EDF2B587CCA00A5ECBD /* Preview Assets.xcassets */; };
+		EC334EEA2B587CCA00A5ECBD /* OBDDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC334EE92B587CCA00A5ECBD /* OBDDemoTests.swift */; };
+		EC334EF42B587CCA00A5ECBD /* OBDDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC334EF32B587CCA00A5ECBD /* OBDDemoUITests.swift */; };
+		EC334EF62B587CCA00A5ECBD /* OBDDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC334EF52B587CCA00A5ECBD /* OBDDemoUITestsLaunchTests.swift */; };
+		EC334F062B587E6B00A5ECBD /* ControlUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC334F052B587E6B00A5ECBD /* ControlUnit.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC334EE62B587CCA00A5ECBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC334ECC2B587CC900A5ECBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC334ED32B587CC900A5ECBD;
+			remoteInfo = OBDDemo;
+		};
+		EC334EF02B587CCA00A5ECBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC334ECC2B587CC900A5ECBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC334ED32B587CC900A5ECBD;
+			remoteInfo = OBDDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EC334ED42B587CC900A5ECBD /* OBDDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OBDDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC334ED72B587CC900A5ECBD /* OBDDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBDDemoApp.swift; sourceTree = "<group>"; };
+		EC334ED92B587CC900A5ECBD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EC334EDB2B587CCA00A5ECBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC334EDD2B587CCA00A5ECBD /* OBDDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OBDDemo.entitlements; sourceTree = "<group>"; };
+		EC334EDF2B587CCA00A5ECBD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EC334EE52B587CCA00A5ECBD /* OBDDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OBDDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC334EE92B587CCA00A5ECBD /* OBDDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBDDemoTests.swift; sourceTree = "<group>"; };
+		EC334EEF2B587CCA00A5ECBD /* OBDDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OBDDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC334EF32B587CCA00A5ECBD /* OBDDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBDDemoUITests.swift; sourceTree = "<group>"; };
+		EC334EF52B587CCA00A5ECBD /* OBDDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBDDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EC334F052B587E6B00A5ECBD /* ControlUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlUnit.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC334ED12B587CC900A5ECBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC334EE22B587CCA00A5ECBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC334EEC2B587CCA00A5ECBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC334ECB2B587CC900A5ECBD = {
+			isa = PBXGroup;
+			children = (
+				EC334ED62B587CC900A5ECBD /* OBDDemo */,
+				EC334EE82B587CCA00A5ECBD /* OBDDemoTests */,
+				EC334EF22B587CCA00A5ECBD /* OBDDemoUITests */,
+				EC334ED52B587CC900A5ECBD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC334ED52B587CC900A5ECBD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC334ED42B587CC900A5ECBD /* OBDDemo.app */,
+				EC334EE52B587CCA00A5ECBD /* OBDDemoTests.xctest */,
+				EC334EEF2B587CCA00A5ECBD /* OBDDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC334ED62B587CC900A5ECBD /* OBDDemo */ = {
+			isa = PBXGroup;
+			children = (
+				EC334F082B587EB600A5ECBD /* Components */,
+				EC334F022B587E1A00A5ECBD /* Modules */,
+				EC334ED72B587CC900A5ECBD /* OBDDemoApp.swift */,
+				EC334ED92B587CC900A5ECBD /* ContentView.swift */,
+				EC334EDB2B587CCA00A5ECBD /* Assets.xcassets */,
+				EC334EDD2B587CCA00A5ECBD /* OBDDemo.entitlements */,
+				EC334EDE2B587CCA00A5ECBD /* Preview Content */,
+			);
+			path = OBDDemo;
+			sourceTree = "<group>";
+		};
+		EC334EDE2B587CCA00A5ECBD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EC334EDF2B587CCA00A5ECBD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EC334EE82B587CCA00A5ECBD /* OBDDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC334EE92B587CCA00A5ECBD /* OBDDemoTests.swift */,
+			);
+			path = OBDDemoTests;
+			sourceTree = "<group>";
+		};
+		EC334EF22B587CCA00A5ECBD /* OBDDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EC334EF32B587CCA00A5ECBD /* OBDDemoUITests.swift */,
+				EC334EF52B587CCA00A5ECBD /* OBDDemoUITestsLaunchTests.swift */,
+			);
+			path = OBDDemoUITests;
+			sourceTree = "<group>";
+		};
+		EC334F022B587E1A00A5ECBD /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				EC334F032B587E4700A5ECBD /* Control Units */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		EC334F032B587E4700A5ECBD /* Control Units */ = {
+			isa = PBXGroup;
+			children = (
+				EC334F072B587E7200A5ECBD /* Views */,
+				EC334F042B587E5100A5ECBD /* Model */,
+			);
+			path = "Control Units";
+			sourceTree = "<group>";
+		};
+		EC334F042B587E5100A5ECBD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC334F052B587E6B00A5ECBD /* ControlUnit.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EC334F072B587E7200A5ECBD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EC334F082B587EB600A5ECBD /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC334ED32B587CC900A5ECBD /* OBDDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC334EF92B587CCA00A5ECBD /* Build configuration list for PBXNativeTarget "OBDDemo" */;
+			buildPhases = (
+				EC334ED02B587CC900A5ECBD /* Sources */,
+				EC334ED12B587CC900A5ECBD /* Frameworks */,
+				EC334ED22B587CC900A5ECBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OBDDemo;
+			productName = OBDDemo;
+			productReference = EC334ED42B587CC900A5ECBD /* OBDDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC334EE42B587CCA00A5ECBD /* OBDDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC334EFC2B587CCA00A5ECBD /* Build configuration list for PBXNativeTarget "OBDDemoTests" */;
+			buildPhases = (
+				EC334EE12B587CCA00A5ECBD /* Sources */,
+				EC334EE22B587CCA00A5ECBD /* Frameworks */,
+				EC334EE32B587CCA00A5ECBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC334EE72B587CCA00A5ECBD /* PBXTargetDependency */,
+			);
+			name = OBDDemoTests;
+			productName = OBDDemoTests;
+			productReference = EC334EE52B587CCA00A5ECBD /* OBDDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EC334EEE2B587CCA00A5ECBD /* OBDDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC334EFF2B587CCA00A5ECBD /* Build configuration list for PBXNativeTarget "OBDDemoUITests" */;
+			buildPhases = (
+				EC334EEB2B587CCA00A5ECBD /* Sources */,
+				EC334EEC2B587CCA00A5ECBD /* Frameworks */,
+				EC334EED2B587CCA00A5ECBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC334EF12B587CCA00A5ECBD /* PBXTargetDependency */,
+			);
+			name = OBDDemoUITests;
+			productName = OBDDemoUITests;
+			productReference = EC334EEF2B587CCA00A5ECBD /* OBDDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC334ECC2B587CC900A5ECBD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					EC334ED32B587CC900A5ECBD = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					EC334EE42B587CCA00A5ECBD = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = EC334ED32B587CC900A5ECBD;
+					};
+					EC334EEE2B587CCA00A5ECBD = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = EC334ED32B587CC900A5ECBD;
+					};
+				};
+			};
+			buildConfigurationList = EC334ECF2B587CC900A5ECBD /* Build configuration list for PBXProject "OBDDemo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC334ECB2B587CC900A5ECBD;
+			productRefGroup = EC334ED52B587CC900A5ECBD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC334ED32B587CC900A5ECBD /* OBDDemo */,
+				EC334EE42B587CCA00A5ECBD /* OBDDemoTests */,
+				EC334EEE2B587CCA00A5ECBD /* OBDDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC334ED22B587CC900A5ECBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC334EE02B587CCA00A5ECBD /* Preview Assets.xcassets in Resources */,
+				EC334EDC2B587CCA00A5ECBD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC334EE32B587CCA00A5ECBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC334EED2B587CCA00A5ECBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC334ED02B587CC900A5ECBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC334EDA2B587CC900A5ECBD /* ContentView.swift in Sources */,
+				EC334ED82B587CC900A5ECBD /* OBDDemoApp.swift in Sources */,
+				EC334F062B587E6B00A5ECBD /* ControlUnit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC334EE12B587CCA00A5ECBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC334EEA2B587CCA00A5ECBD /* OBDDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC334EEB2B587CCA00A5ECBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC334EF42B587CCA00A5ECBD /* OBDDemoUITests.swift in Sources */,
+				EC334EF62B587CCA00A5ECBD /* OBDDemoUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC334EE72B587CCA00A5ECBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC334ED32B587CC900A5ECBD /* OBDDemo */;
+			targetProxy = EC334EE62B587CCA00A5ECBD /* PBXContainerItemProxy */;
+		};
+		EC334EF12B587CCA00A5ECBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC334ED32B587CC900A5ECBD /* OBDDemo */;
+			targetProxy = EC334EF02B587CCA00A5ECBD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EC334EF72B587CCA00A5ECBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EC334EF82B587CCA00A5ECBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		EC334EFA2B587CCA00A5ECBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = OBDDemo/OBDDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OBDDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = 8ZLVSZF25Z;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jkristopaitis.testing.OBDDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC334EFB2B587CCA00A5ECBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = OBDDemo/OBDDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OBDDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = 8ZLVSZF25Z;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jkristopaitis.testing.OBDDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EC334EFD2B587CCA00A5ECBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8ZLVSZF25Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jkristopaitis.testing.OBDDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OBDDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OBDDemo";
+			};
+			name = Debug;
+		};
+		EC334EFE2B587CCA00A5ECBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8ZLVSZF25Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jkristopaitis.testing.OBDDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OBDDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OBDDemo";
+			};
+			name = Release;
+		};
+		EC334F002B587CCA00A5ECBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8ZLVSZF25Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jkristopaitis.testing.OBDDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OBDDemo;
+			};
+			name = Debug;
+		};
+		EC334F012B587CCA00A5ECBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8ZLVSZF25Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jkristopaitis.testing.OBDDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OBDDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC334ECF2B587CC900A5ECBD /* Build configuration list for PBXProject "OBDDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC334EF72B587CCA00A5ECBD /* Debug */,
+				EC334EF82B587CCA00A5ECBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC334EF92B587CCA00A5ECBD /* Build configuration list for PBXNativeTarget "OBDDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC334EFA2B587CCA00A5ECBD /* Debug */,
+				EC334EFB2B587CCA00A5ECBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC334EFC2B587CCA00A5ECBD /* Build configuration list for PBXNativeTarget "OBDDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC334EFD2B587CCA00A5ECBD /* Debug */,
+				EC334EFE2B587CCA00A5ECBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC334EFF2B587CCA00A5ECBD /* Build configuration list for PBXNativeTarget "OBDDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC334F002B587CCA00A5ECBD /* Debug */,
+				EC334F012B587CCA00A5ECBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC334ECC2B587CC900A5ECBD /* Project object */;
+}
