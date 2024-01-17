@@ -11,7 +11,9 @@ import SwiftUI
 struct OBDDemoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ControlUnitsListView()
+                .background(Color(red: 17/255, green: 17/255, blue: 17/255, opacity: 1))
+
         }
     }
 }
