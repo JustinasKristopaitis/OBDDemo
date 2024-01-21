@@ -10,14 +10,14 @@ import SwiftUI
 enum TextStyle {
     case title, description, small
 
-    var style: Font {
+    var font: Font {
         switch self {
         case .description:
-            return .custom("SFProDisplay-Bold", size: 14)
+            return Font.custom("SF Pro", size: 14)
         case .title:
-            return .custom("SFProDisplay-Bold", size: 16)
+            return Font.custom("SF Pro", size: 16)
         case .small:
-            return .caption
+            return Font.system(size: 12)
 
         }
     }

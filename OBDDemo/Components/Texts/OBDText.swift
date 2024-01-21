@@ -14,7 +14,7 @@ struct OBDText: View {
 
     init(
         _ text: String,
-        style: TextStyle,
+        style: TextStyle = .description,
         alignment: Alignment = .center
     ) {
         self.text = text
@@ -24,7 +24,7 @@ struct OBDText: View {
 
     var body: some View {
         Text(text)
-            .font(style.style)
+            .font(style.font)
             .foregroundStyle(style.color)
             .frame(maxWidth: .infinity, alignment: alignment)
     }
