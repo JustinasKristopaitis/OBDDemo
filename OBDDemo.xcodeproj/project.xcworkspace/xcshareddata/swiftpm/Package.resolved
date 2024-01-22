@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "ios-practical-task",
+      "kind" : "remoteSourceControl",
+      "location" : "https://bitbucket.org/voltas-it/ios-practical-task.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "d6c53dd7c63874f3e954b225eae9fa2929462e33"
+      }
+    }
+  ],
+  "version" : 2
+}

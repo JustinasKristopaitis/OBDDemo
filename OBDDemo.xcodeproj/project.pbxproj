@@ -14,6 +14,11 @@
 		EC334EF42B587CCA00A5ECBD /* OBDDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC334EF32B587CCA00A5ECBD /* OBDDemoUITests.swift */; };
 		EC334EF62B587CCA00A5ECBD /* OBDDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC334EF52B587CCA00A5ECBD /* OBDDemoUITestsLaunchTests.swift */; };
 		EC334F062B587E6B00A5ECBD /* ControlUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC334F052B587E6B00A5ECBD /* ControlUnit.swift */; };
+		EC46F27C2B5DBF6A00932AD9 /* VehicleAPI in Frameworks */ = {isa = PBXBuildFile; productRef = EC46F27B2B5DBF6A00932AD9 /* VehicleAPI */; };
+		EC46F27F2B5DC00C00932AD9 /* VehicleDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46F27E2B5DC00C00932AD9 /* VehicleDataLoader.swift */; };
+		EC46F2812B5DC0C100932AD9 /* ControlUnitData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46F2802B5DC0C100932AD9 /* ControlUnitData.swift */; };
+		EC46F2842B5DC21300932AD9 /* ControlUnitsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46F2832B5DC21300932AD9 /* ControlUnitsListViewModel.swift */; };
+		EC46F2872B5DC6C500932AD9 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46F2862B5DC6C500932AD9 /* Color.swift */; };
 		EC696AA02B5882B20084FAFB /* OBDText.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC696A9F2B5882B20084FAFB /* OBDText.swift */; };
 		EC696AA22B5882BF0084FAFB /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC696AA12B5882BF0084FAFB /* TextStyle.swift */; };
 		EC696AAD2B5887E70084FAFB /* SFProDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC696AAB2B5887E70084FAFB /* SFProDisplay-Bold.ttf */; };
@@ -51,6 +56,10 @@
 		EC334EF32B587CCA00A5ECBD /* OBDDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBDDemoUITests.swift; sourceTree = "<group>"; };
 		EC334EF52B587CCA00A5ECBD /* OBDDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBDDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EC334F052B587E6B00A5ECBD /* ControlUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlUnit.swift; sourceTree = "<group>"; };
+		EC46F27E2B5DC00C00932AD9 /* VehicleDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDataLoader.swift; sourceTree = "<group>"; };
+		EC46F2802B5DC0C100932AD9 /* ControlUnitData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlUnitData.swift; sourceTree = "<group>"; };
+		EC46F2832B5DC21300932AD9 /* ControlUnitsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlUnitsListViewModel.swift; sourceTree = "<group>"; };
+		EC46F2862B5DC6C500932AD9 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		EC696A9F2B5882B20084FAFB /* OBDText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBDText.swift; sourceTree = "<group>"; };
 		EC696AA12B5882BF0084FAFB /* TextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
 		EC696AAB2B5887E70084FAFB /* SFProDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Bold.ttf"; sourceTree = "<group>"; };
@@ -64,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC46F27C2B5DBF6A00932AD9 /* VehicleAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +155,7 @@
 		EC334F022B587E1A00A5ECBD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				EC46F27D2B5DBFF400932AD9 /* DataLoader */,
 				EC334F032B587E4700A5ECBD /* Control Units */,
 			);
 			path = Modules;
@@ -167,9 +178,36 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		EC46F27D2B5DBFF400932AD9 /* DataLoader */ = {
+			isa = PBXGroup;
+			children = (
+				EC46F27E2B5DC00C00932AD9 /* VehicleDataLoader.swift */,
+				EC46F2802B5DC0C100932AD9 /* ControlUnitData.swift */,
+			);
+			path = DataLoader;
+			sourceTree = "<group>";
+		};
+		EC46F2822B5DC1F100932AD9 /* ControlUnitsListView */ = {
+			isa = PBXGroup;
+			children = (
+				EC696AB02B588A460084FAFB /* ControlUnitsListView.swift */,
+				EC46F2832B5DC21300932AD9 /* ControlUnitsListViewModel.swift */,
+			);
+			path = ControlUnitsListView;
+			sourceTree = "<group>";
+		};
+		EC46F2852B5DC68900932AD9 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				EC46F2862B5DC6C500932AD9 /* Color.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
 		EC696A9D2B5882130084FAFB /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				EC46F2852B5DC68900932AD9 /* Colors */,
 				EC696A9E2B5882300084FAFB /* Texts */,
 			);
 			path = Components;
@@ -206,7 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				EC696AB22B588C100084FAFB /* ControlUnitEntryView */,
-				EC696AB02B588A460084FAFB /* ControlUnitsListView.swift */,
+				EC46F2822B5DC1F100932AD9 /* ControlUnitsListView */,
 			);
 			path = ControlUnitsListView;
 			sourceTree = "<group>";
@@ -235,6 +273,9 @@
 			dependencies = (
 			);
 			name = OBDDemo;
+			packageProductDependencies = (
+				EC46F27B2B5DBF6A00932AD9 /* VehicleAPI */,
+			);
 			productName = OBDDemo;
 			productReference = EC334ED42B587CC900A5ECBD /* OBDDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -307,6 +348,9 @@
 				Base,
 			);
 			mainGroup = EC334ECB2B587CC900A5ECBD;
+			packageReferences = (
+				EC46F27A2B5DBF6A00932AD9 /* XCRemoteSwiftPackageReference "ios-practical-task" */,
+			);
 			productRefGroup = EC334ED52B587CC900A5ECBD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -354,7 +398,11 @@
 				EC696AB42B588C250084FAFB /* ControlUnitEntryView.swift in Sources */,
 				EC696AA22B5882BF0084FAFB /* TextStyle.swift in Sources */,
 				EC696AB12B588A460084FAFB /* ControlUnitsListView.swift in Sources */,
+				EC46F2872B5DC6C500932AD9 /* Color.swift in Sources */,
+				EC46F2812B5DC0C100932AD9 /* ControlUnitData.swift in Sources */,
+				EC46F2842B5DC21300932AD9 /* ControlUnitsListViewModel.swift in Sources */,
 				EC334ED82B587CC900A5ECBD /* OBDDemoApp.swift in Sources */,
+				EC46F27F2B5DC00C00932AD9 /* VehicleDataLoader.swift in Sources */,
 				EC696AA02B5882B20084FAFB /* OBDText.swift in Sources */,
 				EC334F062B587E6B00A5ECBD /* ControlUnit.swift in Sources */,
 			);
@@ -713,6 +761,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EC46F27A2B5DBF6A00932AD9 /* XCRemoteSwiftPackageReference "ios-practical-task" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://bitbucket.org/voltas-it/ios-practical-task.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EC46F27B2B5DBF6A00932AD9 /* VehicleAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC46F27A2B5DBF6A00932AD9 /* XCRemoteSwiftPackageReference "ios-practical-task" */;
+			productName = VehicleAPI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EC334ECC2B587CC900A5ECBD /* Project object */;
 }
