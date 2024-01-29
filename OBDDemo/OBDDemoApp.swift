@@ -11,7 +11,12 @@ import SwiftUI
 struct OBDDemoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ControlUnitsListView(
+                viewModel: ControlUnitsListViewModel(
+                    vehicleDataLoader: VehicleDataLoader()
+                )
+            )
+            .background(Color.primaryBackground)
         }
     }
 }
