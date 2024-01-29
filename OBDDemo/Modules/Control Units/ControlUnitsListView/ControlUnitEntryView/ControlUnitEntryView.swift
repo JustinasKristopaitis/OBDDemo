@@ -13,6 +13,7 @@ struct ControlUnitEntryView: View {
     init(controlUnitData: ControlUnitData) {
         self.controlUnitData = controlUnitData
     }
+
     var body: some View {
         HStack {
             AsyncImage(
@@ -27,19 +28,42 @@ struct ControlUnitEntryView: View {
 
                 },
                 placeholder: {
-                    ProgressView()
+                    OBDLoadingView()
+                        .frame(width: 120, height: 60)
                 }
             )
-            HStack {
-                VStack(alignment: .leading, spacing: 4) {
-                    OBDText(controlUnitData.name, style: .title, alignment: .leading)
-                    OBDText("ID \(controlUnitData.id)", style: .description, alignment: .leading)
+            VStack {
+                HStack(alignment: .center) {
+                    VStack(alignment: .leading, spacing: 4) {
+                        if controlUnitData.status.lowercased() == "faulty" {
+                            FaultyBadge()
+                        }
+                        HStack {
+                            OBDText(
+                                controlUnitData.name,
+                                style: .title,
+                                alignment: .leading
+                            )
+                        }
+                        OBDText(
+                            "ID \(controlUnitData.id)",
+                            style: .description,
+                            alignment: .leading
+                        )
 
+                    }
+                    .padding(.leading, 16)
+
+                    Spacer()
+                    Image("right_arrow")
                 }
-                .padding(.horizontal, 16)
 
-                Image("right_arrow")
+                Divider()
+                    .padding(.top, 15)
+                    .padding(.leading, 16)
+                    .foregroundColor(.primaryWhiteWithOpacity(alpha: 0.13))
             }
         }
+        .frame(height: 92)
     }
 }

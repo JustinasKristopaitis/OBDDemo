@@ -8,6 +8,10 @@
 import Foundation
 
 class ControlUnitsListViewModel: ObservableObject {
+    enum ControlUnitsLoadingState {
+        case loading, empty, success, failed
+    }
+    var state: ControlUnitsLoadingState = .loading
     private let vehicleDataLoader: VehicleDataLoading
 
     @Published var data: [ControlUnitData] = []
@@ -19,7 +23,17 @@ class ControlUnitsListViewModel: ObservableObject {
     }
 
     @MainActor
-    func loadVehicleData() async throws {
-        data = try await vehicleDataLoader.loadData(forceLoad: true)
+    func loadVehicleData() async {
+        do {
+            state = .loading
+            data = try await vehicleDataLoader.loadData(forceLoad: true)
+            if data.isEmpty {
+                state = .empty
+            } else {
+                state = .success
+            }
+        } catch {
+            state = .failed
+        }
     }
 }

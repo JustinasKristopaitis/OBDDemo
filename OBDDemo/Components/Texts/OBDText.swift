@@ -26,6 +26,5 @@ struct OBDText: View {
         Text(text)
             .font(style.font)
             .foregroundStyle(style.color)
-            .frame(maxWidth: .infinity, alignment: alignment)
     }
 }

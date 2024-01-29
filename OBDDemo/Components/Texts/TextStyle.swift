@@ -8,7 +8,7 @@
 import SwiftUI
 
 enum TextStyle {
-    case title, description, titleL
+    case title, description, titleL, small
 
     var font: Font {
         switch self {
@@ -18,6 +18,8 @@ enum TextStyle {
             return Font.custom("SF Pro", size: 16)
         case .titleL:
             return Font.custom("SF Pro", size: 18)
+        case .small:
+            return Font.custom("SF Pro", size: 10)
 
         }
     }
@@ -27,7 +29,9 @@ enum TextStyle {
         case .title, .titleL:
             return .primaryWhite
         case .description:
-            return .primaryWhiteWithOpacity
+            return .primaryWhiteWithOpacity()
+        case .small:
+            return .black
         }
     }
 }
