@@ -13,7 +13,8 @@ struct OBDDemoApp: App {
         WindowGroup {
             ControlUnitsListView(
                 viewModel: ControlUnitsListViewModel(
-                    vehicleDataLoader: VehicleDataLoader()
+                    vehicleDataLoader: VehicleDataLoader(),
+                    searchable: DataSearcher()
                 )
             )
             .background(Color.primaryBackground)

@@ -32,19 +32,19 @@ struct ControlUnitEntryView: View {
                         .frame(width: 120, height: 60)
                 }
             )
+
             VStack {
+                Spacer()
                 HStack(alignment: .center) {
                     VStack(alignment: .leading, spacing: 4) {
                         if controlUnitData.status.lowercased() == "faulty" {
                             FaultyBadge()
                         }
-                        HStack {
-                            OBDText(
-                                controlUnitData.name,
-                                style: .title,
-                                alignment: .leading
-                            )
-                        }
+                        OBDText(
+                            controlUnitData.name,
+                            style: .title,
+                            alignment: .leading
+                        )
                         OBDText(
                             "ID \(controlUnitData.id)",
                             style: .description,
@@ -58,12 +58,12 @@ struct ControlUnitEntryView: View {
                     Image("right_arrow")
                 }
 
+                Spacer()
                 Divider()
                     .padding(.top, 15)
                     .padding(.leading, 16)
                     .foregroundColor(.primaryWhiteWithOpacity(alpha: 0.13))
             }
         }
-        .frame(height: 92)
     }
 }

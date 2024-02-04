@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// Maybe should rename to some InfoBadge and inject text string, as well as color or other parameters?
 struct FaultyBadge: View {
     var body: some View {
         VStack(alignment: .leading) {
