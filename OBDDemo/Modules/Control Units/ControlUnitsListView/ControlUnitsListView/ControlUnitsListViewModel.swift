@@ -9,24 +9,30 @@ import Foundation
 
 class ControlUnitsListViewModel: ObservableObject {
     enum ControlUnitsLoadingState {
-        case loading, empty, success, failed
+        case loading, empty, success, failed, searching
     }
+
     var state: ControlUnitsLoadingState = .loading
-    private let vehicleDataLoader: VehicleDataLoading
 
     @Published var data: [ControlUnitData] = []
+    @Published var searchedData: [ControlUnitData] = []
+
+    private let vehicleDataLoader: VehicleDataLoading
+    private let searchable: DataSearcher<ControlUnitData>
 
     init(
-        vehicleDataLoader: VehicleDataLoading
+        vehicleDataLoader: VehicleDataLoading,
+        searchable: DataSearcher<ControlUnitData>
     ) {
         self.vehicleDataLoader = vehicleDataLoader
+        self.searchable = searchable
     }
 
     @MainActor
     func loadVehicleData() async {
         do {
             state = .loading
-            data = try await vehicleDataLoader.loadData(forceLoad: true)
+            data = try await vehicleDataLoader.loadData()
             if data.isEmpty {
                 state = .empty
             } else {
@@ -35,5 +41,15 @@ class ControlUnitsListViewModel: ObservableObject {
         } catch {
             state = .failed
         }
+    }
+
+    func search(text: String) {
+        state = .searching
+        searchedData = searchable.filterArray(of: data, with: text)
+    }
+
+    func resetSearch() {
+        state = .success
+        searchedData = []
     }
 }

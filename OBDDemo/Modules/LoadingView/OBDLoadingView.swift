@@ -17,8 +17,6 @@ struct OBDLoadingView: View {
     }
 
     /* In Figma I see that on loading "Indicator" is an image. Not animating loading, is not loading :D In such a case, I would go to talk to designers, but as I can't... I improvised a bit.
-
-     Also, I am not sure about the size. Image size is 96x96, but image has paddings, so again, would need to talk to designers.
      */
 
     var body: some View {
@@ -26,7 +24,7 @@ struct OBDLoadingView: View {
             Circle()
                 .trim(from: 0, to: isLoading ? 1 : 0)
                 .stroke(Color.primaryBlue, lineWidth: 2)
-                .frame(width: 50, height: 50)
+                .frame(width: 44, height: 44)
                 .rotationEffect(.degrees(-90))
                 .onAppear {
                     withAnimation(

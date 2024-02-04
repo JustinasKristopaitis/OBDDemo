@@ -19,9 +19,9 @@ struct ErrorView: View {
     init(
         title: String,
         message: String,
-        buttonCTA: String?,
-        imageName: String?,
-        onButtonTap: CompletionHandler?
+        buttonCTA: String? = nil,
+        imageName: String? = nil,
+        onButtonTap: CompletionHandler? = nil
     ) {
         self.title = title
         self.message = message

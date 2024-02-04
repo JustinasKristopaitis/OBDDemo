@@ -23,6 +23,8 @@
 		EC46F2812B5DC0C100932AD9 /* ControlUnitData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46F2802B5DC0C100932AD9 /* ControlUnitData.swift */; };
 		EC46F2842B5DC21300932AD9 /* ControlUnitsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46F2832B5DC21300932AD9 /* ControlUnitsListViewModel.swift */; };
 		EC46F2872B5DC6C500932AD9 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46F2862B5DC6C500932AD9 /* Color.swift */; };
+		EC56FAE62B702ABD004329C6 /* Searchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC56FAE52B702ABD004329C6 /* Searchable.swift */; };
+		EC56FAE92B702E13004329C6 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC56FAE82B702E13004329C6 /* SearchView.swift */; };
 		EC696AA02B5882B20084FAFB /* OBDText.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC696A9F2B5882B20084FAFB /* OBDText.swift */; };
 		EC696AA22B5882BF0084FAFB /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC696AA12B5882BF0084FAFB /* TextStyle.swift */; };
 		EC696AAD2B5887E70084FAFB /* SFProDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC696AAB2B5887E70084FAFB /* SFProDisplay-Bold.ttf */; };
@@ -68,6 +70,8 @@
 		EC46F2802B5DC0C100932AD9 /* ControlUnitData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlUnitData.swift; sourceTree = "<group>"; };
 		EC46F2832B5DC21300932AD9 /* ControlUnitsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlUnitsListViewModel.swift; sourceTree = "<group>"; };
 		EC46F2862B5DC6C500932AD9 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		EC56FAE52B702ABD004329C6 /* Searchable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Searchable.swift; sourceTree = "<group>"; };
+		EC56FAE82B702E13004329C6 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		EC696A9F2B5882B20084FAFB /* OBDText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBDText.swift; sourceTree = "<group>"; };
 		EC696AA12B5882BF0084FAFB /* TextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
 		EC696AAB2B5887E70084FAFB /* SFProDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Bold.ttf"; sourceTree = "<group>"; };
@@ -195,6 +199,8 @@
 		EC334F022B587E1A00A5ECBD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				EC56FAE72B702E04004329C6 /* SearchView */,
+				EC56FAE42B702AB0004329C6 /* Searchable */,
 				EC09FC7C2B65C81A00B0BC9D /* FaultyBadgeView */,
 				EC09FC792B65C07200B0BC9D /* LoadingView */,
 				EC09FC732B65BAC300B0BC9D /* ErrorView */,
@@ -245,6 +251,22 @@
 				EC46F2862B5DC6C500932AD9 /* Color.swift */,
 			);
 			path = Colors;
+			sourceTree = "<group>";
+		};
+		EC56FAE42B702AB0004329C6 /* Searchable */ = {
+			isa = PBXGroup;
+			children = (
+				EC56FAE52B702ABD004329C6 /* Searchable.swift */,
+			);
+			path = Searchable;
+			sourceTree = "<group>";
+		};
+		EC56FAE72B702E04004329C6 /* SearchView */ = {
+			isa = PBXGroup;
+			children = (
+				EC56FAE82B702E13004329C6 /* SearchView.swift */,
+			);
+			path = SearchView;
 			sourceTree = "<group>";
 		};
 		EC696A9D2B5882130084FAFB /* Components */ = {
@@ -443,6 +465,7 @@
 				EC696AA22B5882BF0084FAFB /* TextStyle.swift in Sources */,
 				EC09FC7B2B65C08D00B0BC9D /* OBDLoadingView.swift in Sources */,
 				EC696AB12B588A460084FAFB /* ControlUnitsListView.swift in Sources */,
+				EC56FAE62B702ABD004329C6 /* Searchable.swift in Sources */,
 				EC09FC782B65BD3600B0BC9D /* OBDButton.swift in Sources */,
 				EC46F2872B5DC6C500932AD9 /* Color.swift in Sources */,
 				EC46F2812B5DC0C100932AD9 /* ControlUnitData.swift in Sources */,
@@ -450,6 +473,7 @@
 				EC334ED82B587CC900A5ECBD /* OBDDemoApp.swift in Sources */,
 				EC46F27F2B5DC00C00932AD9 /* VehicleDataLoader.swift in Sources */,
 				EC09FC7E2B65C82500B0BC9D /* FaultyBadge.swift in Sources */,
+				EC56FAE92B702E13004329C6 /* SearchView.swift in Sources */,
 				EC696AA02B5882B20084FAFB /* OBDText.swift in Sources */,
 				EC334F062B587E6B00A5ECBD /* ControlUnit.swift in Sources */,
 				EC09FC752B65BAD000B0BC9D /* ErrorView.swift in Sources */,
@@ -547,6 +571,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = "";
 			};
 			name = Debug;
 		};
@@ -600,6 +625,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = "";
 			};
 			name = Release;
 		};
