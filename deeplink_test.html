@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBDeleven Deeplink Tester</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        h1 {
+            color: #333;
+            margin-top: 0;
+            font-size: 28px;
+            text-align: center;
+        }
+        .subtitle {
+            color: #666;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+        .category {
+            margin-bottom: 32px;
+        }
+        .category-title {
+            color: #667eea;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #667eea;
+        }
+        .deeplink-card {
+            background: #f8f9fa;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 12px;
+            transition: all 0.2s ease;
+        }
+        .deeplink-card:hover {
+            border-color: #667eea;
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+        }
+        .deeplink-card h3 {
+            margin: 0 0 8px 0;
+            color: #333;
+            font-size: 16px;
+        }
+        .deeplink-card p {
+            margin: 0 0 12px 0;
+            color: #666;
+            font-size: 13px;
+        }
+        .deeplink-card a {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: transform 0.2s ease;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        .deeplink-card a:active {
+            transform: scale(0.98);
+        }
+        .url {
+            font-family: 'Courier New', monospace;
+            font-size: 11px;
+            color: #999;
+            background: white;
+            padding: 8px;
+            border-radius: 4px;
+            margin-top: 8px;
+            word-break: break-all;
+        }
+        .badge {
+            display: inline-block;
+            background: #ffd700;
+            color: #333;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 10px;
+            font-weight: 600;
+            margin-left: 8px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 24px;
+            padding-top: 24px;
+            border-top: 1px solid #e9ecef;
+            color: #666;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔗 OBDeleven Deeplink Tester</h1>
+        <p class="subtitle">Tap any button to test deeplinks on your device</p>
+
+        <div class="category">
+            <div class="category-title">📱 More Tab Routes</div>
+
+            <div class="deeplink-card">
+                <h3>📝 Help Us Improve<span class="badge">NEW</span></h3>
+                <p>Opens the feedback form in the More tab</p>
+                <a href="obdeleven://go/help_us_improve">Test Deeplink</a>
+                <div class="url">obdeleven://go/help_us_improve</div>
+            </div>
+
+            <div class="deeplink-card">
+                <h3>🚗 Supported Vehicles<span class="badge">NEW</span></h3>
+                <p>Shows the list of supported vehicles</p>
+                <a href="obdeleven://go/supported_vehicles">Test Deeplink</a>
+                <div class="url">obdeleven://go/supported_vehicles</div>
+            </div>
+
+            <div class="deeplink-card">
+                <h3>🌐 Select Language<span class="badge">NEW</span></h3>
+                <p>Opens language selection (iOS: bottom sheet, Android: More tab)</p>
+                <a href="obdeleven://go/select_language">Test Deeplink</a>
+                <div class="url">obdeleven://go/select_language</div>
+            </div>
+
+            <div class="deeplink-card">
+                <h3>🌍 Country Selection<span class="badge">NEW</span></h3>
+                <p>Opens the country selection screen</p>
+                <a href="obdeleven://go/country_select">Test Deeplink</a>
+                <div class="url">obdeleven://go/country_select</div>
+            </div>
+        </div>
+
+        <div class="category">
+            <div class="category-title">🏠 Home Tab Routes</div>
+
+            <div class="deeplink-card">
+                <h3>💳 Purchase Credits (Adapty Paywall)<span class="badge">NEW</span></h3>
+                <p>Opens the Adapty paywall for purchasing credits (same as credits badge on Home)</p>
+                <a href="obdeleven://go/purchase_credits">Test Deeplink</a>
+                <div class="url">obdeleven://go/purchase_credits</div>
+            </div>
+
+            <div class="deeplink-card">
+                <h3>📦 Purchase Ultimate (Adapty Paywall)<span class="badge">NEW</span></h3>
+                <p>Opens the Adapty paywall with Ultimate plan placement</p>
+                <a href="obdeleven://go/purchase_ultimate">Test Deeplink</a>
+                <div class="url">obdeleven://go/purchase_ultimate</div>
+            </div>
+
+            <div class="deeplink-card">
+                <h3>📦 Purchase Pro Ultimate (Adapty Paywall)<span class="badge">NEW</span></h3>
+                <p>Opens the Adapty paywall with Pro Ultimate plan placement</p>
+                <a href="obdeleven://go/purchase_pro_ultimate">Test Deeplink</a>
+                <div class="url">obdeleven://go/purchase_pro_ultimate</div>
+            </div>
+        </div>
+
+        <div class="category">
+            <div class="category-title">🚙 Garage Tab Routes</div>
+
+            <div class="deeplink-card">
+                <h3>📋 Car Checklist</h3>
+                <p>Opens the used car checklist feature</p>
+                <a href="obdeleven://go/car_checklist">Test Deeplink</a>
+                <div class="url">obdeleven://go/car_checklist</div>
+            </div>
+
+            <div class="deeplink-card">
+                <h3>🔍 Vehicle Lookup</h3>
+                <p>Opens the vehicle lookup screen</p>
+                <a href="obdeleven://go/vehicle_lookup">Test Deeplink</a>
+                <div class="url">obdeleven://go/vehicle_lookup</div>
+            </div>
+
+            <div class="deeplink-card">
+                <h3>🏥 Car Health Report Intro</h3>
+                <p>Opens the auto inspect intro screen</p>
+                <a href="obdeleven://go/car_health_report_intro">Test Deeplink</a>
+                <div class="url">obdeleven://go/car_health_report_intro</div>
+            </div>
+
+            <div class="deeplink-card">
+                <h3>🔧 Car Inspection Intro</h3>
+                <p>Opens the car inspection introduction</p>
+                <a href="obdeleven://go/car_inspection_intro">Test Deeplink</a>
+                <div class="url">obdeleven://go/car_inspection_intro</div>
+            </div>
+
+            <div class="deeplink-card">
+                <h3>🔬 Passive Diagnostics</h3>
+                <p>Opens passive diagnostics (uses placeholder vehicleId)</p>
+                <a href="obdeleven://go/passive_diagnostic">Test Deeplink</a>
+                <div class="url">obdeleven://go/passive_diagnostic</div>
+            </div>
+
+            <div class="deeplink-card">
+                <h3>🔬 Passive Diagnostics (with Vehicle ID)</h3>
+                <p>Opens passive diagnostics for a specific vehicle</p>
+                <a href="obdeleven://go/passive_diagnostic?vehicleId=test-vehicle-123">Test Deeplink</a>
+                <div class="url">obdeleven://go/passive_diagnostic?vehicleId=test-vehicle-123</div>
+            </div>
+
+            <div class="deeplink-card">
+                <h3>📏 Mileage Check</h3>
+                <p>Opens mileage check intro (uses placeholder vehicleId)</p>
+                <a href="obdeleven://go/mileage_check">Test Deeplink</a>
+                <div class="url">obdeleven://go/mileage_check</div>
+            </div>
+        </div>
+
+        <div class="category">
+            <div class="category-title">🔗 Universal Link Example</div>
+
+            <div class="deeplink-card">
+                <h3>🔔 Maintenance Reminders</h3>
+                <p>Opens maintenance reminders (requires vehicleId parameter)</p>
+                <a href="https://obdeleven.onelink.me/garage/vehicle/maintenance_reminders?vehicleId=test-vehicle-456">Test Universal Link</a>
+                <div class="url">https://obdeleven.onelink.me/garage/vehicle/maintenance_reminders?vehicleId=test-vehicle-456</div>
+            </div>
+        </div>
+
+        <div class="category">
+            <div class="category-title">ℹ️ Testing Notes</div>
+            <div class="deeplink-card">
+                <p style="margin: 0; line-height: 1.6;">
+                    <strong>Custom Scheme:</strong> <code>obdeleven://go/*</code><br>
+                    <strong>Universal Links:</strong> <code>https://obdeleven.onelink.me/*</code><br><br>
+                    <strong>iOS Testing:</strong> Use simulator or device with Xcode<br>
+                    <code>xcrun simctl openurl booted "obdeleven://go/help_us_improve"</code><br><br>
+                    <strong>Android Testing:</strong> Use emulator or device with ADB<br>
+                    <code>adb shell am start -a android.intent.action.VIEW -d "obdeleven://go/help_us_improve"</code>
+                </p>
+            </div>
+        </div>
+
+        <div class="footer">
+            💡 Make sure OBDeleven app is installed on your device<br>
+            📚 Last updated: March 5, 2026
+        </div>
+    </div>
+</body>
+</html>
